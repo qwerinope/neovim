@@ -628,7 +628,7 @@ require('lazy').setup({
         dockerls = {},
         docker_compose_language_service = {},
         emmet_ls = {},
-        nil_ls = {},
+        -- nil_ls = {},
         svelte = {},
         cssls = {},
 
@@ -843,15 +843,15 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    --     'folke/tokyonight.nvim',
-    'navarasu/onedark.nvim',
+    'folke/tokyonight.nvim',
+    --'navarasu/onedark.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
-      require('onedark').setup {
-        style = 'darker',
+      require('tokyonight.colors').setup {
+        style = 'night',
       }
-      require('onedark').load()
+      require('tokyonight').load()
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
     end,
@@ -933,11 +933,11 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

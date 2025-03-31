@@ -11,5 +11,6 @@ return {
 		lazygit = { enabled = true },
 		animate = { enabled = true, duration = 20, fps = 120 },
 		words = { enabled = true },
+		dashboard = { enabled = true }
 	},
 }

@@ -15,4 +15,4 @@ local map = vim.keymap.set
 -- map('v', '<Left>', ':echo "Please use h instead of the arrow keys"<CR>', { noremap = true })
 -- map('v', '<Right>', ':echo "Please use l instead of the arrow keys"<CR>', { noremap = true })
 
-map('n', '<leader>lg', Snacks.lazygit.open, { desc = "Open LazyGit" })
+map("n", "<leader>lg", Snacks.lazygit.open, { desc = "Open LazyGit" })

@@ -1,7 +1,7 @@
 return {
-	'folke/snacks.nvim',
+	"folke/snacks.nvim",
 	priority = 1000,
-	dependencies = { 'nvim-tree/nvim-web-devicons' },
+	dependencies = { "nvim-tree/nvim-web-devicons" },
 	lazy = false,
 	opts = {
 		bigfile = { enabled = true },
@@ -11,6 +11,6 @@ return {
 		lazygit = { enabled = true },
 		animate = { enabled = true, duration = 20, fps = 120 },
 		words = { enabled = true },
-		dashboard = { enabled = true }
+		dashboard = { enabled = true },
 	},
 }

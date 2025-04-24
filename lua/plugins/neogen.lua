@@ -5,12 +5,13 @@ return {
 		input_after_comment = true,
 	},
 	keys = {
-		{'<leader>gd',
-			function ()
-				require('neogen').generate()
+		{
+			"<leader>gd",
+			function()
+				require("neogen").generate()
 			end,
-			mode = '',
-			desc = "[G]enerate [D]ocs"
-		 }
-	}
+			mode = "",
+			desc = "[G]enerate [D]ocs",
+		},
+	},
 }
